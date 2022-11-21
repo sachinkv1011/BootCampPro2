@@ -8,13 +8,13 @@ public class ProgramMenu {
         System.out.println("3.Prime number or not");
         System.out.println("4.Even or Not");
         System.out.println("5.Reverse of a number");
-
+        int flag=1;
+        while(flag == 1){
         System.out.println("Enter a choice from 1-5 from the MENU");
         Scanner sc=new Scanner(System.in);
         int choice=sc.nextInt();
 
-        int flag=1;
-        while(flag == 1){
+
 
             switch(choice){
 
@@ -55,6 +55,27 @@ public class ProgramMenu {
                     }
 
                     break;
+
+
+                case 3 :
+                    System.out.println("---This is program to print the prime or not---");
+                    System.out.println("Enter the number to check");
+                    int prime=sc.nextInt();
+                    int flag1=0;
+                    for(int i=1;i<=prime;i++){
+                        if(prime%i==0){
+                            flag1++;
+                        }
+                    }
+                    if(flag1==2){
+                        System.out.println(prime +" is a prime number");
+                    }
+                    else {
+                        System.out.println(prime +" is Not a prime number");
+                    }
+                    break;
+
+
 
             }
 
