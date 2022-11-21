@@ -14,9 +14,7 @@ public class ProgramMenu {
         Scanner sc=new Scanner(System.in);
         int choice=sc.nextInt();
 
-
-
-            switch(choice){
+           switch(choice){
 
                 case 1:
                     System.out.println("---This is program to print the larget of 3 numbers---");
@@ -88,8 +86,30 @@ public class ProgramMenu {
                     }
                     break;
 
+                case 5:
+                    System.out.println("---This is program to print the reverse of a number---\"");
+                    System.out.println("Enter the number to find reverse");
+                    int number= sc.nextInt();
+                    int reverse=0;
+                    while(number>0){
+                        int digit=number%10;
+                        reverse=(reverse*10)+digit;
+                        number=number/10;
+
+                    }
+                    System.out.println("The reverse is "+reverse);
+                    break;
+
+                default:
+                    System.out.println("Wrong input");
+
+
 
             }
+            System.out.println("D0 you want continue or not ");
+            System.out.println("Type 1 to continue or 0 to quit");
+            int f=sc.nextInt();
+            flag=f;
 
 
 
