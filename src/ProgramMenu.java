@@ -35,6 +35,27 @@ public class ProgramMenu {
                         System.out.println(num3 + " is larger");
                     }
 
+                    break;
+
+                case 2:
+                    System.out.println("---This is program to print the smallest of 3 numbers---");
+                    System.out.println("Enter the 3 numbers");
+                    int n1=sc.nextInt();
+                    int n2=sc.nextInt();
+                    int n3=sc.nextInt();
+
+                    if(n1<2 && n1<n3){
+                        System.out.println(n1 + " is smaller");
+                    }
+                    else if(n2<n1 && n2<n3){
+                        System.out.println(n2 + " is smaller");
+                    }
+                    else{
+                        System.out.println(n3 + " is smaller");
+                    }
+
+                    break;
+
             }
 
 
