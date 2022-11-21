@@ -76,6 +76,18 @@ public class ProgramMenu {
                     break;
 
 
+                case 4:
+                    System.out.println("---This is program to print the prime or not---\"");
+                    System.out.println("Enter the number to check even or not");
+                    int num= sc.nextInt();
+                    if(num%2==0){
+                        System.out.println(num +" is a even number");
+                    }
+                    else{
+                        System.out.println(num +" is a odd number");
+                    }
+                    break;
+
 
             }
 
